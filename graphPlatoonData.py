@@ -1,6 +1,5 @@
 from itertools import islice
 import matplotlib.pyplot as plt
-import csv
 
 
 def graph_data(graph_step=1, user_x_label="Epoch", user_y_label="Success Rate", user_title="Success Rate"):
