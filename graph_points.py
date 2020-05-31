@@ -2,7 +2,7 @@ from itertools import islice
 import matplotlib.pyplot as plt
 
 
-def graph_data(graph_step=1, user_x_label="Epoch", user_y_label="Success Rate", user_title="Success Rate"):
+def graph_data(graph_step=1, user_title="", user_x_label="", user_y_label=""):
     more_graphs = 'Y'
     while more_graphs == 'Y':
         print("What file would you like to graph?")
@@ -46,7 +46,9 @@ def graph_data(graph_step=1, user_x_label="Epoch", user_y_label="Success Rate", 
     plt.show()
 
 
+print("What is the title of this graph?")
+g_title = input()
 print("Which data points would you like to see? Enter 1 for every point, 500 for every 500th point, "
       "and so on.")
 step_size = int(input())
-graph_data(step_size)
+graph_data(step_size, g_title, "Epoch", "Success Rate")

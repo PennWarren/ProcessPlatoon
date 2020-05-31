@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-def graph_average(user_title="Average Success Rate", user_x_label="Episode", user_y_label="Mean Success Rate"):
+def graph_average(user_title="", user_x_label="", user_y_label=""):
     more_graphs = 'Y'
     while more_graphs == 'Y':
         print("What file would you like to graph?")
@@ -60,4 +60,4 @@ def graph_average(user_title="Average Success Rate", user_x_label="Episode", use
 
 print("What is the title of this graph?")
 g_title = input()
-graph_average(g_title)
+graph_average(g_title, "Episode", "Mean Success Rate")
