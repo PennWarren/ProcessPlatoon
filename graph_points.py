@@ -43,7 +43,7 @@ def graph_data(graph_step=1, user_x_label="Epoch", user_y_label="Success Rate", 
     plt.ylabel(user_y_label)
     plt.title(user_title)
     plt.legend()
-    plt.show(block=False)
+    plt.show()
 
 
 print("Which data points would you like to see? Enter 1 for every point, 500 for every 500th point, "
