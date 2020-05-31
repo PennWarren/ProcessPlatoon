@@ -15,7 +15,7 @@ def get_filenames():
 # file if the file name inputted does not exist).
 i, o = get_filenames()
 output_file = open(o, "w+")
-input_file = open(i)
+input_file = open(i, "r")
 
 iterator = 0
 
