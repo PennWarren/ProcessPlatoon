@@ -19,8 +19,8 @@ input_file = open(i)
 
 iterator = 0
 
-# Skip the first 20 lines
-for line in islice(input_file, 20, None):
+# Change the second parameter to "x" to skip the first x lines
+for line in islice(input_file, 15, None):
     # Print epoch number and delimit the .csv OR .txt file
     if line.startswith("Epoch"):
         iterator += 1
@@ -36,5 +36,3 @@ for line in islice(input_file, 20, None):
 
 input_file.close()
 output_file.close()
-
-
