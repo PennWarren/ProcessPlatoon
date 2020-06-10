@@ -19,7 +19,7 @@ def graph_average(user_title="", user_x_label="", user_y_label=""):
                 # Add data to list
                 data_point = line.split(', ')
                 x.append(int(data_point[0]))
-                y.append(float(data_point[1]))
+                y.append(float(data_point[1])) # Can add "* 100"
 
                 # Mean
                 mean_point = np.mean(y)
@@ -54,6 +54,12 @@ def graph_average(user_title="", user_x_label="", user_y_label=""):
     plt.xlabel(user_x_label)
     plt.ylabel(user_y_label)
     plt.title(user_title)
+
+    # Limit each axis
+    plt.ylim((0, 1))
+    # plt.xlim()
+
+    # Legend
     plt.legend(loc=4)
     plt.show()
 
